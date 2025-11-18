@@ -1,0 +1,538 @@
+/* SVN FILE: $Id: cake.generic.css 7945 2008-12-19 02:16:01Z gwoo $ */
+/**
+ *
+ * PHP versions 4 and 5
+ *
+ * CakePHP(tm) :  Rapid Development Framework (http://www.cakephp.org)
+ * Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @filesource
+ * @copyright     Copyright 2005-2008, Cake Software Foundation, Inc. (http://www.cakefoundation.org)
+ * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP(tm) Project
+ * @package       cake
+ * @subpackage    cake.app.webroot.css
+ * @since         CakePHP(tm)
+ * @version       $Revision: 7945 $
+ * @modifiedby    $LastChangedBy: gwoo $
+ * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+
+ @import url("/css/postermountain.css");
+
+/* General Style Info */
+body {
+	background: #000;
+	color: #999;
+	font-family:arial,'lucida',verdana,helvetica,sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+}
+p {
+	margin: 0px;
+}
+#content {
+	padding-top: 15px;
+}
+#content a {
+	color: white;
+	text-decoration: none;
+}
+#content a:hover {
+	text-decoration:underline;
+}
+a img {
+	border:none;
+}
+h1, h2, h3, h4 {
+	font-size: 20px;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	margin-top: 25px;
+}
+ul, li {
+	margin: 0 12px;
+}
+fieldset {
+	border: 0px;
+}
+/* Layout */
+#container {
+	text-align: center;
+}
+
+
+/*
+ * Layout rules for the header and divider.
+ * These appear on every page.
+ */
+#central_logo {
+	width: 900px;
+	text-align: center;
+	margin: 10px auto;
+	position: relative;
+}
+#divider {
+	background: #000 url('../img/divider_bg.png') repeat-x;
+	height: 28px;
+	width: 100%;
+}
+#divider_content {
+	width: 710px; /* same as logo */
+	height: 28px;
+	text-align: left;
+	vertical-align: middle;
+	margin: 0px auto;
+	font-size: 14px;
+}
+#divider_content_left {
+	text-align: left;
+	white-space: nowrap;
+}
+#divider_content_right {
+	text-align: right;
+}
+#divider_content a{
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+#divider_content a:hover{
+	text-decoration: underline;
+}
+#divider_content_left a{
+	margin-right: 25px;
+}
+#divider_content_right a{
+	margin-left: 25px;
+}
+/*
+ * End: rules for the header and divider.
+ */
+
+/*
+ * rules for the search bar.
+ */
+#search_bar{
+	background-color: #0b1b42;
+	width: 100%;
+	padding: 7px 0px;
+	margin-bottom: 15px;
+}
+#search_form{
+	width: 710px;
+	margin: 0 auto;
+}
+#search_form {
+	font-size: 12px;
+}
+#search_form td{
+	vertical-align: middle;
+}
+#search_form #SearchValue{
+	width: 203px;
+	height: 15px;
+}
+#search_form input[type=submit]{
+	width: 70px;
+	height: 25px;
+}
+#search_form #SearchField{
+	height: 23px;
+	width: 135px;
+}
+#search_form #SearchAuthenticity{
+	height: 23px;
+	width: 95px;
+}
+#search_form #SearchImages{
+	height: 23px;
+	width: 70px;
+}
+#search_form #SearchSortSelector{
+	height: 23px;
+	width: 95px;
+}
+ /*
+ * End: rules for the search bar
+ */
+
+
+ /* Rules for default text in a form */
+ .idle_field {
+	 color: #666;
+ }
+ .focus_field {
+	 color: black;
+ }
+ 
+#content{
+	text-align: left;
+	width: 900px;
+	margin: 0px auto 200px auto;
+	clear: both;
+}
+
+/* Pageing entries */
+.poster {
+	display: block;
+	padding: 20px 10px;
+	background-color: #11100e;
+	min-height: 200px;
+	margin: 8px 0px;
+	position: relative;
+}
+.poster_image {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	float: left;
+}
+.poster .poster_text {
+	position: absolute;
+	vertical-align: top;
+	text-align: justify;
+	padding: 0px 0px;
+	width: 665px;
+	right: 10px;
+}
+div.poster h3{
+	margin: 0;
+}
+div.poster .poster_title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.poster_title {
+	width: 580px;
+	text-align: left
+}
+.poster_views {
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	font-size: 12px;
+}
+.poster_para{
+	color: #7d97cb;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.poster_info {
+	padding: 0px 0px;
+	width: 665px;
+	position: absolute;
+	clear: right;
+	right: 10px;
+	bottom: 15px;
+}
+.poster_info td{
+	width: 150px;
+	vertical-align: bottom;
+	font-size: 12px;
+}
+.status_fake {
+	font-weight:bold;
+	color: #e32;
+}
+.status_pending {
+	font-weight:bold;
+	color: #ee3;
+}
+.status_authentic {
+	font-weight:bold;
+	color: #2e3;
+}
+/* Paging */
+#paging_container_top, #paging_container_bottom {
+	color: #FFF;
+}
+.paging {
+	font-weight: bold;
+}
+.paging .disabled {
+	color: #999;
+	display: inline;
+}
+.paging .current {
+	color: #999;
+}
+
+/* Scaffold View */
+dl {
+	line-height: 2em;
+	margin: 0em 0em;
+}
+dl.altrow {
+}
+dt {
+	font-weight: bold;
+	padding-left: 4px;
+	vertical-align: top;
+	margin: 0px;
+}
+dd {
+	margin: -2em 0 0 10em;
+	vertical-align: top;
+}
+
+/*
+ * Specific Forms
+ */
+.page_form {
+	background-color: #11100e;
+	padding: 10px;
+}
+.page_form td{
+	width: 435px;
+	vertical-align: top;
+	position: relative;
+	padding-bottom: 25px;
+}
+.page_form fieldset, .page_form legend {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+.page_form .select label, .page_form .textarea label, .page_form legend{
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+}
+.page_form input[type=text], .page_form input[type=password]{
+	width: 300px;
+}
+.page_form select{
+	width: 306px;
+	height: 25px;
+}
+.page_form input[type=button] {
+	height: 25px;
+}
+
+#UserAddForm {
+	margin-top: 15px;
+}
+
+/* Forms */
+form p {
+	color: #7d97cb;
+	font-size: 12px;
+}
+form div {
+	padding: 2px 0;
+	clear: both;
+	vertical-align: text-top;
+}
+form div.textarea{
+	margin: 10px 0;
+}
+form label {
+	color: #FFF;
+	display: block;
+}
+textarea {
+	font-size: 14px;
+	width: 400px;
+	border: 3px solid #EEE;
+	background-color: #CCC;
+}
+input[type=text],input[type=password] {
+	border: 3px solid #eee;
+	background-color: #ccc;
+}
+input[type=file] {
+	color: #FFF;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	width: auto;
+}
+input[type=radio] {
+	float:left;
+	clear: both;
+}
+div.radio label {
+	margin: 0 0 6px 20px;
+}
+
+/* Notices and Errors */
+div.message {
+	clear: both;
+	color: #e32;
+	font-weight: bold;
+	font-size: 120%;
+	margin: 1em 0;
+}
+div.error-message {
+	clear: both;
+	color: #900;
+	font-weight: bold;
+}
+p.error {
+	background-color: #e32;
+	color: #fff;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+p.error em {
+	color: #999;
+	font-weight: normal;
+	line-height: 140%;
+}
+.notice {
+	background: #ffcc00;
+	color: #999;
+	display: block;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+.success {
+	background: green;
+	color: #fff;
+}
+
+/*  Actions  */
+div.actions ul {
+	margin: 0px 0;
+	padding: 0;
+}
+div.actions li {
+	display: inline;
+	list-style-type: none;
+	line-height: 2em;
+	margin: 0 2em 0 0;
+	white-space: nowrap;
+}
+
+/* Related */
+div.related {
+	clear: both;
+	display: block;
+	margin-top: 25px;
+}
+
+/* Debugging */
+pre {
+	color: #999;
+	background: #f0f0f0;
+	padding: 1em;
+}
+pre.cake-debug {
+	background: #ffcc00;
+	font-size: 120%;
+	line-height: 140%;
+	margin-top: 1em;
+	overflow: auto;
+	position: relative;
+}
+div.cake-stack-trace {
+	background: #fff;
+	border: 4px dotted #ffcc00;
+	margin: 0px;
+	padding: 6px;
+	font-size: 120%;
+	line-height: 140%;
+	overflow: auto;
+	position: relative;
+}
+div.cake-code-dump pre {
+	position: relative;
+	overflow: auto;
+}
+div.cake-stack-trace pre, div.cake-code-dump pre {
+	color: #999;
+	background-color: #F0F0F0;
+	margin: 0px;
+	padding: 1em;
+	overflow: auto;
+}
+div.cake-code-dump pre, div.cake-code-dump pre code {
+	clear: both;
+	font-size: 12px;
+	line-height: 15px;
+	margin: 4px 2px;
+	padding: 4px;
+	overflow: auto;
+}
+div.cake-code-dump span.code-highlight {
+	background-color: #ff0;
+	padding: 4px;
+}
+div.code-coverage-results div.code-line {
+	padding-left:5px;
+	display:block;
+	margin-left:10px;
+}
+div.code-coverage-results div.uncovered span.content {
+	background:#ecc;
+}
+div.code-coverage-results div.covered span.content {
+	background:#cec;
+}
+div.code-coverage-results div.ignored span.content {
+	color:#aaa;
+}
+div.code-coverage-results span.line-num {
+	color:#666;
+	display:block;
+	float:left;
+	width:20px;
+	text-align:right;
+	margin-right:5px;
+}
+div.code-coverage-results span.line-num strong {
+	color:#666;
+}
+div.code-coverage-results div.start {
+	border:1px solid #aaa;
+	border-width:1px 1px 0px 1px;
+	margin-top:30px;
+	padding-top:5px;
+}
+div.code-coverage-results div.end {
+	border:1px solid #aaa;
+	border-width:0px 1px 1px 1px;
+	margin-bottom:30px;
+	padding-bottom:5px;
+}
+div.code-coverage-results div.realstart {
+	margin-top:0px;
+}
+div.code-coverage-results p.note {
+	color:#bbb;
+	padding:5px;
+	margin:5px 0 10px;
+	font-size:10px;
+}
+div.code-coverage-results span.result-bad {
+	color: #a00;
+}
+div.code-coverage-results span.result-ok {
+	color: #fa0;
+}
+div.code-coverage-results span.result-good {
+	color: #0a0;
+}
+
+/* added */
+.usernode {
+	padding: 0;
+}
+.usernode p {
+	display: inline;
+	margin-right: 10px;
+}

@@ -1,0 +1,114 @@
+* {
+	border: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+}
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: xx-large;
+}
+.style4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+#container {
+	width: 750px;
+	height: 1024px; /* set this to one page length */
+	position: relative;
+}
+
+
+/*
+ *  items in the header
+*/
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#contact_info {
+	font-size: 20px;
+	font-weight:bold;
+	padding-top:10px;
+	position: absolute;
+	right:10px;
+}
+
+#content {
+	width: 750px;
+	position: absolute;
+	top: 200px;
+}
+
+/*
+ * items for the poster info
+*/
+#poster_info {
+	margin: 15px 0px;
+	width: 1024px;
+}
+#poster_title_description {
+	vertical-align: top;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 30px;
+}
+#poster_title {
+	font-size:30px;
+	font-weight:bold;
+}
+#poster_description {
+	text-align: justify;
+	/* text-justify: newspaper; */
+	font-size:16px;
+	padding: 10px 0px;
+}
+.poster_main_images {
+	text-align:right;
+	padding: 0px 15px;
+}
+
+/*
+ * items for displaying the posters images
+*/
+.image_block {
+	width: 280px;
+	position: relative;
+	float:left;
+	padding: 10px;
+	padding-left: 60px;
+	margin-left: 10px;
+	margin-top: 10px;
+	page-break-before: always;
+}
+
+.image_small {
+}
+
+.image_description {
+	text-align: left;
+	padding-top: 10px;
+	width: 240px;
+}
+
+
+/*
+ * conclusion, legal info, etc.
+*/
+#conclusion, #procedures, #legal_info {
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+#conclusion, #procedures {
+	font-size:16px;
+}
+
+#legal_info {
+	page-break-before: always;
+	font-size:12px;
+	margin-top: 100px;
+}

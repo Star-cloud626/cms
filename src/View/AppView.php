@@ -37,5 +37,14 @@ class AppView extends View
      */
     public function initialize(): void
     {
+        parent::initialize();
+        
+        // Load custom helpers
+        $this->addHelper('Html');
+        $this->addHelper('Form');
+        $this->addHelper('Time');
+        $this->addHelper('Search');
+        $this->addHelper('Format');
+        $this->addHelper('JsInclude');
     }
 }

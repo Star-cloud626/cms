@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?postermountain [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?postermountain.*$ [NC] 
+RewriteRule \.(gif|jpg)$ - [F]
+
